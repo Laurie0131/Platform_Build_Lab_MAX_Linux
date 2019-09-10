@@ -91,7 +91,7 @@ Note:
 <p align="right"><span class="gold" >@size[1.1em](<b>Install "Screen" on Ubuntu&nbsp;&nbsp;&nbsp;&nbsp;  </b>)</span>
 <span style="font-size:0.55em;" ><br> - skip for Clear Linux* Project &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </span></p>
 
-@snap[north-west span-45 ]
+@snap[north-west span-49 ]
 <br>
 <br>
 <br>
@@ -104,12 +104,12 @@ Note:
 <br>
 <p style="line-height:60%" align="left"><span style="font-size:0.780em;  " >
  Terminal prompt (Cnt-Alt-T)</span></p>
-<p style="line-height:45%" align="left" > <span style="font-size:0.57em; font-family:Consolas;" >
+<p style="line-height:45%" align="left" > <span style="font-size:0.57em; font-family:Consolas;" ><br>
 &nbsp;&nbsp; bash$ sudo apt-get install screen &nbsp;&nbsp;<br>
 &nbsp;&nbsp; bash$ cd $Home &nbsp;&nbsp;<br>
 &nbsp;&nbsp; bash$ gedit ~.screenrc &nbsp;&nbsp;
 </span></p>
-<br><br>
+<br>
 <p style="line-height:60%" align="left"><span style="font-size:0.780em;  " >
 Inside the editor, type<br> @size[.8em]("<font face="Consolas">shell /bin/bash</font>") &nbsp;&nbsp;then save
 </span></p>
