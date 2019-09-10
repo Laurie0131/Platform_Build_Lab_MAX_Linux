@@ -765,51 +765,46 @@ Note:
 
 many will have "ifdef" statements in the major .dsc file in order to enable a feature or not
 
----
 
-blank slide
-
----?image=/assets/images/slides/Slide27.JPG
+---?image=/assets/images/slides/Slide26.JPG
 @title[Build Process for Release]
 <p align="right"><span class="gold" >@size[1.1em](<b>Build Process for RELEASE Target</b>)</span></p>
 
 @snap[north-west span-100 ]
+<p style="line-height:45%" align="left" ><span style="font-size:0.40em; font-family:Consolas;" >&nbsp;&nbsp;<br><br></span></p>
 <br>
-<p style="line-height:45%" align="left" ><span style="font-size:0.20em; font-family:Consolas;" >&nbsp;&nbsp;<br><br></span></p>
 <br>
-<br>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:20% "><span style="font-size:0.9em;" ><br>&nbsp;</span></p>)
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:40% "><span style="font-size:0.9em;" ><br>&nbsp;</span></p>)
 @snapend
 
 @snap[north-west span-100 ]
 <p style="line-height:20%" align="left"><span style="font-size:0.8em">
-<br><br><br><br>@size[1.125em](<font color="yellow"> &#10105;</font>)
+<br><br><br>@size[1.0125em](<font color="yellow"> &#10105;</font>) 
 </span></p>
-<p style="line-height:70%" align="left"><span style="font-size:0.75em">
-From the edk2 directory invoke the "build" command to build MinnowBoard Max <br>@size[.8em](Note: Use the Your VS TAG below with "-t" option)
+<p style="line-height:70%" align="left"><span style="font-size:0.7em">
+From the edk2/ directory invoke the “build” command to build MinnowBoard Max
 </span></p>
-<p style="line-height:35%" align="left" ><span style="font-size:0.40em; font-family:Consolas;" >&nbsp;&nbsp;
-$&gt; build -a IA32 -a X64 -t @color[yellow](VS2015x86) -b @color[yellow](RELEASE) -p Vlv2TbltDevicePkg\PlatformPkgX64.dsc -v
+<p style="line-height:35%" align="left" ><span style="font-size:0.41em; font-family:Consolas;" >&nbsp;&nbsp;
+bash$ build -a IA32 -a X64 -t GCC5 -b @color[yellow](RELEASE) -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc  -v
 </span></p>
 @snapend
 
-
-@snap[south-west span-100 ]
+@snap[south-east span-22 ]
 <p style="line-height:37%" align="left" ><span style="font-size:0.55em;" >
-Press Enter <br>
-to Continue<br> 
-the build
+Press Enter to <br>
+Continue the build
+<br>
+<br>
 </span></p>
 @snapend
-
 
 
 
 Note:
-From VS Prompt enter:
+From  Prompt enter:
 ```
-$ cd MaxWS/edk2
-$ build -a IA32 -a X64 -t VS2015x86 -b RELEASE -p Vlv2TbltDevicePkg\PlatformPkgX64.dsc -v
+bash$ cd ~/src/MaxWS/edk2
+bash$ build -a IA32 -a X64 -t GCC5 -b RELEASE -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc -v
 ```
 
 ---
@@ -836,7 +831,8 @@ Note:
 - Does not use the serial port for debug output
 - Smaller image than DEBUG
 - Faster boot than DEBUG
-
+---
+blank slide
 ---?image=/assets/images/slides/Slide29.JPG
 @title[Build Process Completed]
 <p align="right"><span class="gold" >@size[1.1em](<b>Build Process Completed</b>)</span></p>
