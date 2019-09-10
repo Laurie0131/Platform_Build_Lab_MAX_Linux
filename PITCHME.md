@@ -554,7 +554,7 @@ Slide says it all
 
 @snap[north-west span-100 ]
 <p style="line-height:80%" align="left"><span style="font-size:0.8em"><br>
-<br>@size[1.0125em](<font color="yellow"> &#10102;</font>)&nbsp;&nbsp;Terminal prompt (Cnt-Alt-T)  & CD to work space directory <bt>
+<br>@size[1.0125em](<font color="yellow"> &#10102;</font>)&nbsp;&nbsp;Terminal prompt (Cnt-Alt-T)  & CD to work space directory <br>
 <br>@size[1.0125em](<font color="yellow"> &#10103;</font>)&nbsp;&nbsp;Set up Local environment
 </span></p>
 <p style="line-height:40%" align="left" ><span style="font-size:0.47em; font-family:Consolas;" >&nbsp;&nbsp;
