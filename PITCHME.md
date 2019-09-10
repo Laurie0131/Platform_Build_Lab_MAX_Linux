@@ -576,12 +576,10 @@ bash$ . edksetup.sh
 
 Note:
 
----
-blank slide
 
----?image=/assets/images/slides/Slide22.JPG
-@title[Invoke Edksetup]
-<p align="right"><span class="gold" >@size[1.1em](<b>Invoke Edksetup</b>)</span></p>
+---?image=/assets/images/slides/Slide21.JPG
+@title[Building BaseTools]
+<p align="right"><span class="gold" >@size[1.1em](<b>Building BaseTools</b>)</span></p>
 
 @snap[north-west span-38 ]
 <br>
@@ -593,11 +591,17 @@ blank slide
 @snap[north-west span-100 ]
 <p style="line-height:80%" align="left"><span style="font-size:0.8em">
 <br>@size[1.125em](<font color="yellow"> &#10104;</font>)<br><br>
-&nbsp;&nbsp;Invoke<font face="Consolas"> Edksetup</font> form the <font face="Consolas">edk2</font> directory and build <font face="Consolas">BaseTools</font>
+&nbsp;&nbsp;Run Make
 </span></p>
 <p style="line-height:40%" align="left" ><span style="font-size:0.47em; font-family:Consolas;" >&nbsp;&nbsp;
-$&gt; cd edk2<br>&nbsp;&nbsp;
-$&gt; edksetup.bat Rebuild
+bash$ cd ~/src/MaxWS/edk2<br>&nbsp;&nbsp;
+bash$ make –C BaseTools/
+</span></p>
+
+<br>
+<br>
+<p style="line-height:60%" align="left" ><span style="font-size:0.7em;" >
+Make sure the tests pass OK
 </span></p>
 @snapend
 
@@ -625,7 +629,7 @@ For the platform edk II builds usually a script is called that will do pre and p
 There is also this capability that is part of the .dsc but many developers have not taken advantage of this feature
 
 
----?image=/assets/images/slides/Slide24.JPG
+---?image=/assets/images/slides/Slide23.JPG
 @title[Build Process for DEBUG]
 <p align="right"><span class="gold" >@size[1.1em](<b>Build Process for DEBUG Target</b>)</span></p>
 
@@ -641,16 +645,13 @@ There is also this capability that is part of the .dsc but many developers have 
 <p style="line-height:20%" align="left"><span style="font-size:0.8em">
 <br><br><br><br>@size[1.125em](<font color="yellow"> &#10105;</font>)
 </span></p>
-<p style="line-height:70%" align="left"><span style="font-size:0.75em">
-From the edk2 directory invoke the "build" command to build MinnowBoard Max <br>@size[.8em](Note: Use the Your VS TAG below with "-t" option)
-</span></p>
 <p style="line-height:35%" align="left" ><span style="font-size:0.40em; font-family:Consolas;" >&nbsp;&nbsp;
-$&gt; build -a IA32 -a X64 -t @color[yellow](VS2015x86) -p Vlv2TbltDevicePkg\PlatformPkgX64.dsc –y Vlv.report -v
+bash$ build -a IA32 -a X64 -t GCC5 -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc –y Vlv.report -v
 </span></p>
 @snapend
 
 
-@snap[south-west span-100 ]
+@snap[south-east span-25 ]
 <p style="line-height:37%" align="left" ><span style="font-size:0.55em;" >
 Press Enter to <br>
 Continue the build
@@ -659,11 +660,12 @@ Continue the build
 
 Note:
 
-- From the VS Command Prompt … ENTER:
+- From the terminal prompt
+
 
 <pre>
-$ cd C:\FW\MaxWS\edk2
-$ build -a IA32 -a X64 -t VS2015x86 -p Vlv2TbltDevicePkg\PlatformPkgX64.dsc –y Vlv.report -v
+bash$ cd C:\FW\MaxWS\edk2
+bash$ build -a IA32 -a X64 -t GCC5 -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc –y Vlv.report -v
 </pre>
 
 ---
@@ -682,7 +684,7 @@ $ build -a IA32 -a X64 -t VS2015x86 -p Vlv2TbltDevicePkg\PlatformPkgX64.dsc –y
 <br>
 <p style="line-height:60%" align="left"><span style="font-size:0.60em; font-family:Consolas; " >
 <font color="#75deFF">
--a IA32 -a X64 -t VS2015x86 <br>-p Vlv2TbltDevicePkg\PlatformPkgX64.dsc -y Vlv.report -v
+-a IA32 -a X64 -t GCC5 <br>-p Vlv2TbltDevicePkg\PlatformPkgX64.dsc -y Vlv.report -v
 </font>
 </span></p>
 @snapend
@@ -709,7 +711,7 @@ $ build -a IA32 -a X64 -t VS2015x86 -p Vlv2TbltDevicePkg\PlatformPkgX64.dsc –y
 	</tr>
 	<tr class="fragment">
 		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " ><b>TOOL_CHAIN_TAG</b></span></p></td>
-		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " ><b>= @color[yellow](VS2013x86)</b></span></p></td>
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " ><b>= @color[yellow](GCC5)</b></span></p></td>
 		<td align="left" bgcolor="#0070C0" height=".0025"><p style="line-height:010%"><span style="font-size:0.6em" ><b>VS Tool Chain</b></span></p></td>
 	</tr>
 	<tr class="fragment">
@@ -755,6 +757,9 @@ Note:
 
 many will have "ifdef" statements in the major .dsc file in order to enable a feature or not
 
+---
+
+blank slide
 
 ---?image=/assets/images/slides/Slide27.JPG
 @title[Build Process for Release]
