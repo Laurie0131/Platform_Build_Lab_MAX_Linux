@@ -877,7 +877,8 @@ Flash the binary image
 &nbsp; Copy <font face="Consolas">CapsuleApp.efi</font> to a USB thumb drive<br>4.
 &nbsp; Boot into the UEFI Shell  on Max then  type "<font face="Consolas">FS0:</font>"
 <br>
-&nbsp;&nbsp;&nbsp;@size[.8em](using "screen")&nbsp;&nbsp;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.8em](using "screen")&nbsp;&nbsp;
 <span style="background-color: #000000; font-family:Consolas;">@size[.7em](&nbsp;&nbsp;bash$ screen /dev/ttyUSB0 115200&nbsp;&nbsp;&nbsp;)
 </span>
 </span></p>
