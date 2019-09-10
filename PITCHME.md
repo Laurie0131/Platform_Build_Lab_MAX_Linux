@@ -643,12 +643,12 @@ There is also this capability that is part of the .dsc but many developers have 
 
 @snap[north-west span-100 ]
 <p style="line-height:20%" align="left"><span style="font-size:0.8em">
-<br>@size[1.0125em](<font color="yellow"> &#10105;</font>) 
+<br><br><br>@size[1.0125em](<font color="yellow"> &#10105;</font>) 
 </span></p>
 <p style="line-height:70%" align="left"><span style="font-size:0.7em">
 From the edk2/ directory invoke the “build” command to build MinnowBoard Max
 </span></p>
-<p style="line-height:35%" align="left" ><span style="font-size:0.40em; font-family:Consolas;" >&nbsp;&nbsp;
+<p style="line-height:35%" align="left" ><span style="font-size:0.41em; font-family:Consolas;" >&nbsp;&nbsp;
 bash$ build -a IA32 -a X64 -t GCC5 -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc –y Vlv.report -v
 </span></p>
 @snapend
@@ -672,6 +672,9 @@ Note:
 bash$ cd C:\FW\MaxWS\edk2
 bash$ build -a IA32 -a X64 -t GCC5 -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc –y Vlv.report -v
 </pre>
+
+
+Vlv2TbltDevicePkg/PlatformPkgX64.dsc  is the MinnowBoard MAX DSC FILE
 
 ---
 @title[Examine Command Line & Build Parameters]
