@@ -91,30 +91,39 @@ Note:
 <p align="right"><span class="gold" >@size[1.1em](<b>Install "Screen" on Ubuntu&nbsp;&nbsp;&nbsp;&nbsp;  </b>)</span>
 <span style="font-size:0.55em;" ><br> - skip for Clear Linux* Project &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </span></p>
 
+@snap[north-west span-45 ]
+<br>
+<br>
+<br>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
+@snapend
+
 @snap[north-west span-100 ]
 <br>
 <br>
-<p style="line-height:70%" align="left"><span style="font-size:0.80em;  " >
+<p style="line-height:70%" align="left"><span style="font-size:0.780em;  " >
  Terminal prompt (Cnt-Alt-T)<br>
   <br>
- <font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
+ <span style="font-size:0.57em; font-family:Consolas;" >
 &nbsp;&nbsp; bash$ sudo apt-get install screen &nbsp;&nbsp;<br>
 &nbsp;&nbsp; bash$ cd $Home &nbsp;&nbsp;<br>
 &nbsp;&nbsp; bash$ gedit ~.screenrc &nbsp;&nbsp;
-</span></font><br><br>
-Inside the editor, type<br> @size[.8em]("`shell /bin/bash`") &nbsp;&nbsp;then save
+</span><br><br>
+Inside the editor, type<br> @size[.8em]("<font face="Consolas">shell /bin/bash</font>") &nbsp;&nbsp;then save
 </span></p>
 <br>
 @snapend
 
-@snap[north-east span-45 ]
+@snap[north-east span-42 ]
 <br>
 <br>
-<p style="line-height:70%" align="left"><span style="font-size:0.60em;  " >
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.60em;  " >
  <font color="#87E2A9"> While in screen<br>
  <b>Cnt-A</b> then <b>D</b> goes back to Terminal
  <br></font><br>
- @size[.9em](`bash$ screen -r`) <br>
+ @size[.9em](<font face="Consolas">bash$ screen -r</font>) <br>
  (Returns to screen)
 </span></p>
  <br>
@@ -187,21 +196,21 @@ Note:
 @snap[north-west span-100 ]
 <br>
 <br>
-<p style="line-height:70%" align="left"><span style="font-size:0.80em;  " >
+<p style="line-height:60%" align="left"><span style="font-size:0.780em;  " >
  Open Terminal prompt (Cnt-Alt-T)<br>
  <br>
  <font face="Consolas"><span style="background-color: #000000; font-size:0.60em;"> 
-&nbsp;&nbsp; bash$ dmesg &nbsp;&nbsp;<br>
+&nbsp;&nbsp; bash$ sudo dmesg &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
 &nbsp;&nbsp; bash$ sudo chmod 666 /dev/ttyUSB@color[cyan](<i>n</i>) &nbsp;&nbsp;
 </span></font>
 </span></p>
 <br>
 @snapend
 
-@snap[north-east span-55 ]
+@snap[north-east span-52 ]
 <br>
 <br>
-<p style="line-height:70%" align="left"><span style="font-size:0.60em;  " >
+<p style="line-height:60%" align="left"><span style="font-size:0.60em;  " >
  <br>
  <br>
  (to check which USB port is assigned)<br>
@@ -233,7 +242,7 @@ bash$ sudo chmod 666 /dev/ttyUSBn	#(where n is the FTDI number)
  <font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
 &nbsp;&nbsp; bash$ screen /dev/ttyUSB@color[cyan](<i>n</i>) 115200 &nbsp;&nbsp;
 </span></font><br>
-MinnowBoard MAX should boot to the UEFI Shell in the Terminal – Screen
+@size[.8em](MinnowBoard MAX should boot to the UEFI Shell in the Terminal – Screen)
 </span></p>
 <br>
 @snapend
@@ -245,7 +254,7 @@ MinnowBoard MAX should boot to the UEFI Shell in the Terminal – Screen
 <br>
 <br>
 <br>
-<p style="line-height:80%" align="left"><span style="font-size:0.560em;  " >
+<p style="line-height:50%" align="left"><span style="font-size:0.560em;  " >
  <br>
  <br>
  @color[yellow](While in Screen<br> <b>Cnt-A</b> then <b>D</b> goes back to terminal.)<br>
@@ -348,9 +357,7 @@ Note:
 ---
 @title[Linux setup for MinnowBoard Max Lab]
 <p align="right"><span class="gold" >@size[1.1em](<b>Linux setup for MinnowBoard Max Lab  </b>)</span><span style="font-size:0.75em;" >  </span></p>
-<br>
-<br>
-<p style="line-height:60%" align="left" ><span style="font-size:0.7em;" ><br><br><br>
+<p style="line-height:60%" align="left" ><span style="font-size:0.7em;" ><br><br>
 Lab Setup Requirements – Ubuntu 16.04
 </span></p>
 ```
@@ -367,13 +374,17 @@ bash$ sudo swupd bundle-add devpkg-util-linux
 bash$ sudo swupd bundle-add devpkg-gcab
 
 ```
-@snap[north-west span-20]
+
+
+@snap[north-west span-10]
 <br>
 ![ubuntu](/assets/images/ubuntu-logo.png )
 @snapend
 
 
 @snap[west span-20]
+<br>
+<br>
 <br>
 <br>
 ![Clear-logo](/assets/images/ClearLinux-logo.png )
