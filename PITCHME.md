@@ -1,7 +1,8 @@
 ---?image=assets/images/gitpitch-audience.jpg
 @title[Platform Build MAX Lab Linux]
 <br><br>
-<span style="font-size:0.75em" >This slide deck has moved to:  https://gitpitch.com/tianocore-training/Platform_Build_Win_Lab/master#/</span>
+<span style="font-size:0.75em" >This slide deck has moved to:  https://gitpitch.com/tianocore-training/Platform_Build_Lab_MAX_Linux/master#/
+</span>
 <br><br><br>
 ## <span class="gold"   >UEFI & EDK II Training</span>
 
