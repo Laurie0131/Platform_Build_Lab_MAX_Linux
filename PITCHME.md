@@ -547,32 +547,29 @@ Slide says it all
 @snap[north-west span-100 ]
 <br>
 <br>
-<br>
-<br>
 <p style="line-height:45%" align="left" ><span style="font-size:0.40em; font-family:Consolas;" >&nbsp;&nbsp;<br><br></span></p>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:40% "><span style="font-size:0.9em;" ><br><br><br><br><br><br><br><br><br><br><br><br><br>&nbsp;</span></p>)
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:40% "><span style="font-size:0.9em;" ><br><br><br><br><br><br><br><br><br><br><br><br><br><br>&nbsp;</span></p>)
 @snapend
 
 
 @snap[north-west span-100 ]
-<p style="line-height:80%" align="left"><span style="font-size:0.8em">
-<br>@size[1.125em](<font color="yellow"> &#10102;</font>)&nbsp;&nbsp;Terminal prompt (Cnt-Alt-T)  & CD to work space directory <br>
-<br>@size[1.125em](<font color="yellow"> &#10103;</font>)&nbsp;&nbsp;Set up Local environment
+<p style="line-height:80%" align="left"><span style="font-size:0.8em"><br>
+<br>@size[1.0125em](<font color="yellow"> &#10102;</font>)&nbsp;&nbsp;Terminal prompt (Cnt-Alt-T)  & CD to work space directory 
+<br>@size[1.0125em](<font color="yellow"> &#10103;</font>)&nbsp;&nbsp;Set up Local environment
 </span></p>
-<p style="line-height:40%" align="left" ><span style="font-size:0.40em; font-family:Consolas;" >&nbsp;&nbsp;
+<p style="line-height:40%" align="left" ><span style="font-size:0.47em; font-family:Consolas;" >&nbsp;&nbsp;
 bash$ cd ~src/MaxWS<br>&nbsp;&nbsp;
-<br>
+<br>&nbsp;&nbsp;
 bash$ export WORKSPACE=$PWD<br>&nbsp;&nbsp;
-bash$ export PACKAGES_PATH=$WORKSPACE/edk2:\<br>&nbsp;&nbsp;
-    $WORKSPACE/edk2-platforms/Silicon/Intel:\<br>&nbsp;&nbsp;
-    $WORKSPACE/edk2-platforms/Platform/Intel:\<br>&nbsp;&nbsp;
-    $WORKSPACE/edk2-non-osi/Silicon/Intel<br>&nbsp;&nbsp;
-<br>
+bash$ export PACKAGES_PATH=$WORKSPACE/edk2:\<br>&nbsp;&nbsp;&nbsp;&nbsp;
+$WORKSPACE/edk2-platforms/Silicon/Intel:\<br>&nbsp;&nbsp;&nbsp;&nbsp;
+$WORKSPACE/edk2-platforms/Platform/Intel:\<br>&nbsp;&nbsp;&nbsp;&nbsp;
+$WORKSPACE/edk2-non-osi/Silicon/Intel<br>&nbsp;&nbsp;
+<br>&nbsp;&nbsp;
 bash$ cd edk2/<br>&nbsp;&nbsp;
 bash$ chmod +x edksetup.sh<br>&nbsp;&nbsp;
-<br>
+<br>&nbsp;&nbsp;
 bash$ . edksetup.sh
-
 </span></p> 
 
 @snapend
