@@ -838,10 +838,9 @@ Note:
 <span style="font-size:0.8em" >@size[1.25em](<font color="yellow"> &#10106;</font>)&nbsp;&nbsp;Locate the build <font face="Consolas">.Cap</font> images</span>
 
 @snap[south-west span-100  ]
-<p style="line-height:70%" align="left"><span style="font-size:0.7em" >
+<p style="line-height:60%" align="left"><span style="font-size:0.6em" >
 The platform post build process will create capsule images to use with a capsule update process<br>
 The script displays the location of the final .cap files
-<br>
 </span></p>
 @snapend
 
@@ -878,8 +877,8 @@ Flash the binary image
 &nbsp; Copy <font face="Consolas">CapsuleApp.efi</font> to a USB thumb drive<br>4.
 &nbsp; Boot into the UEFI Shell  on Max then  type "<font face="Consolas">FS0:</font>"
 <br>
-@size[.8em](using "screen")
-<span style="background-color: #000000; font-family:Consolas;">@size[.7em](bash$ screen /dev/ttyUSB0 115200)
+&nbsp;&nbsp;&nbsp;@size[.8em](using "screen")&nbsp;&nbsp;
+<span style="background-color: #000000; font-family:Consolas;">@size[.7em](&nbsp;&nbsp;bash$ screen /dev/ttyUSB0 115200&nbsp;&nbsp;&nbsp;)
 </span>
 </span></p>
 @snapend
