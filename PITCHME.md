@@ -357,7 +357,7 @@ Note:
 ---
 @title[Linux setup for MinnowBoard Max Lab]
 <p align="right"><span class="gold" >@size[1.1em](<b>Linux setup for MinnowBoard Max Lab  </b>)</span><span style="font-size:0.75em;" >  </span></p>
-<p style="line-height:60%" align="left" ><span style="font-size:0.7em;" ><br><br>
+<p style="line-height:60%" align="left" ><span style="font-size:0.7em;" ><br><br><br>
 Lab Setup Requirements – Ubuntu 16.04
 </span></p>
 ```
@@ -366,7 +366,7 @@ bash$ sudo apt-get install screen
 bash$ sudo apt-get install gcab 
 
 ```
-<p style="line-height:60%" align="left" ><span style="font-size:0.7em;" ><br><br><br>
+<p style="line-height:60%" align="left" ><span style="font-size:0.7em;" ><br><br><br><br>
 Lab Setup Requirements – Clear Linux* Project
 </span></p>
 ```
@@ -376,15 +376,13 @@ bash$ sudo swupd bundle-add devpkg-gcab
 ```
 
 
-@snap[north-west span-10]
+@snap[north-west span-5]
 <br>
 ![ubuntu](/assets/images/ubuntu-logo.png )
 @snapend
 
 
-@snap[west span-20]
-<br>
-<br>
+@snap[west span-18]
 <br>
 <br>
 ![Clear-logo](/assets/images/ClearLinux-logo.png )
