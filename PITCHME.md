@@ -642,9 +642,10 @@ There is also this capability that is part of the .dsc but many developers have 
 @snapend
 
 @snap[north-west span-100 ]
-<br>
 <p style="line-height:20%" align="left"><span style="font-size:0.8em">
-<br><br><br><br>@size[1.0125em](<font color="yellow"> &#10105;</font>) <br><br>
+<br>@size[1.0125em](<font color="yellow"> &#10105;</font>) 
+</span></p>
+<p style="line-height:70%" align="left"><span style="font-size:0.7em">
 From the edk2/ directory invoke the “build” command to build MinnowBoard Max
 </span></p>
 <p style="line-height:35%" align="left" ><span style="font-size:0.40em; font-family:Consolas;" >&nbsp;&nbsp;
@@ -657,6 +658,7 @@ bash$ build -a IA32 -a X64 -t GCC5 -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc –y 
 <p style="line-height:37%" align="left" ><span style="font-size:0.55em;" >
 Press Enter to <br>
 Continue the build
+<br>
 <br>
 </span></p>
 @snapend
@@ -687,7 +689,7 @@ bash$ build -a IA32 -a X64 -t GCC5 -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc –y 
 <br>
 <p style="line-height:60%" align="left"><span style="font-size:0.60em; font-family:Consolas; " >
 <font color="#75deFF">
--a IA32 -a X64 -t GCC5 <br>-p Vlv2TbltDevicePkg\PlatformPkgX64.dsc -y Vlv.report -v
+-a IA32 -a X64 -t GCC5 <br>-p Vlv2TbltDevicePkg/PlatformPkgX64.dsc -y Vlv.report -v
 </font>
 </span></p>
 @snapend
