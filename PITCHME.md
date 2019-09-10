@@ -555,7 +555,7 @@ Slide says it all
 @snap[north-west span-100 ]
 <p style="line-height:80%" align="left"><span style="font-size:0.8em"><br>
 <br>@size[1.0125em](<font color="yellow"> &#10102;</font>)&nbsp;&nbsp;Terminal prompt (Cnt-Alt-T)  & CD to work space directory <br>
-<br>@size[1.0125em](<font color="yellow"> &#10103;</font>)&nbsp;&nbsp;Set up Local environment
+<br>@size[1.0125em](<font color="yellow"> &#10103;</font>)&nbsp;&nbsp;Set up Local environment (PACKAGES_PATH)
 </span></p>
 <p style="line-height:40%" align="left" ><span style="font-size:0.47em; font-family:Consolas;" ><br>&nbsp;&nbsp;
 bash$ cd ~src/MaxWS<br>&nbsp;&nbsp;
@@ -597,7 +597,8 @@ Note:
 bash$ cd ~/src/MaxWS/edk2<br>&nbsp;&nbsp;
 bash$ make –C BaseTools/
 </span></p>
-
+<br>
+<br>
 <br>
 <br>
 <p style="line-height:60%" align="left" ><span style="font-size:0.7em;" >
@@ -634,7 +635,6 @@ There is also this capability that is part of the .dsc but many developers have 
 <p align="right"><span class="gold" >@size[1.1em](<b>Build Process for DEBUG Target</b>)</span></p>
 
 @snap[north-west span-100 ]
-<br>
 <p style="line-height:45%" align="left" ><span style="font-size:0.40em; font-family:Consolas;" >&nbsp;&nbsp;<br><br></span></p>
 <br>
 <br>
@@ -642,8 +642,10 @@ There is also this capability that is part of the .dsc but many developers have 
 @snapend
 
 @snap[north-west span-100 ]
+<br>
 <p style="line-height:20%" align="left"><span style="font-size:0.8em">
-<br><br><br><br>@size[1.125em](<font color="yellow"> &#10105;</font>)
+<br><br><br><br>@size[1.0125em](<font color="yellow"> &#10105;</font>) <br><br>
+From the edk2/ directory invoke the “build” command to build MinnowBoard Max
 </span></p>
 <p style="line-height:35%" align="left" ><span style="font-size:0.40em; font-family:Consolas;" >&nbsp;&nbsp;
 bash$ build -a IA32 -a X64 -t GCC5 -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc –y Vlv.report -v
@@ -651,10 +653,11 @@ bash$ build -a IA32 -a X64 -t GCC5 -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc –y 
 @snapend
 
 
-@snap[south-east span-25 ]
+@snap[south-east span-22 ]
 <p style="line-height:37%" align="left" ><span style="font-size:0.55em;" >
 Press Enter to <br>
 Continue the build
+<br>
 </span></p>
 @snapend
 
@@ -712,7 +715,7 @@ bash$ build -a IA32 -a X64 -t GCC5 -p Vlv2TbltDevicePkg/PlatformPkgX64.dsc –y 
 	<tr class="fragment">
 		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " ><b>TOOL_CHAIN_TAG</b></span></p></td>
 		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " ><b>= @color[yellow](GCC5)</b></span></p></td>
-		<td align="left" bgcolor="#0070C0" height=".0025"><p style="line-height:010%"><span style="font-size:0.6em" ><b>VS Tool Chain</b></span></p></td>
+		<td align="left" bgcolor="#0070C0" height=".0025"><p style="line-height:010%"><span style="font-size:0.6em" ><b>Tool Chain</b></span></p></td>
 	</tr>
 	<tr class="fragment">
 		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " ><b>ACTIVE_PLATFORM</b></span></p></td>
