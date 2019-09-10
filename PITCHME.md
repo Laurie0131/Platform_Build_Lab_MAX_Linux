@@ -426,23 +426,28 @@ Note:
 @title[Get the BaseTools]
 <p align="right"><span class="gold" >@size[1.1em](<b>Get the BaseTools for Max   </b>)</span><br>
 
+@snap[north-west span-51 ]
+<br>
+<br>
+<br>
+<br>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" ><br><br>&nbsp;</span></p>)
+@snapend
+
 @snap[north-west span-100 ]
 <br>
 <br>
 <p style="line-height:70%"><span style="font-size:0.8em">
 Rename or <b>mv</b> the directory @size[.8em]("<font face="Consolas">~src/MaxWS/edk2/BaseTools</font>")
 </span></p>
-
 <p style="line-height:45%" align="left" ><span style="font-size:0.57em; font-family:Consolas;" >
 &nbsp;&nbsp; bash$ cd ~src/Max/edk2 &nbsp;&nbsp;&nbsp;&nbsp;<br>
 &nbsp;&nbsp; bash$ mv BaseTools BaseToolsX &nbsp;&nbsp;<br>
-&nbsp;&nbsp; bash$ tar -xf BaseToolsMax.tar.xz &nbsp;&nbsp;<br>
+&nbsp;&nbsp; bash$ tar -xf BaseToolsMax.tar.xz &nbsp;&nbsp;
 </span></p>
-<br>
-<p style="line-height:70%"><span style="font-size:0.8em">
-Extract the file <font face="Consolas">@size[.8em](~/.../FW/PlatformBuildLab/BaseToolsMax.tar.xz)  to  @size[.8em](`~src/Max/edk2`)</font>
+<p style="line-height:70%"><span style="font-size:0.7em">
+Extract the file <font face="Consolas">@size[.7em](~src/MaxWS/edk2/BaseToolsMax.tar.xz)  to  @size[.7em](~src/MaxWS/edk2)</font>
 </span></p>
-
 @snapend
 
 Note:
