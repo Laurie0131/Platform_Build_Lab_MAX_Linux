@@ -376,7 +376,7 @@ bash$ sudo swupd bundle-add devpkg-gcab
 ```
 
 
-@snap[north-west span-5]
+@snap[north-west span-8]
 <br>
 ![ubuntu](/assets/images/ubuntu-logo.png )
 @snapend
