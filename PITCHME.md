@@ -445,7 +445,7 @@ Rename or <b>mv</b> the directory @size[.8em]("<font face="Consolas">~src/MaxWS/
 &nbsp;&nbsp; bash$ mv BaseTools BaseToolsX &nbsp;&nbsp;<br>
 &nbsp;&nbsp; bash$ tar -xf BaseToolsMax.tar.xz &nbsp;&nbsp;
 </span></p>
-<p style="line-height:70%"><span style="font-size:0.7em"><br><br>
+<p style="line-height:70%"><span style="font-size:0.7em"><br>
 Extract the file <font face="Consolas">@size[.7em](~src/MaxWS/edk2/BaseToolsMax.tar.xz)  to  @size[.7em](~src/MaxWS/edk2)</font>
 </span></p>
 @snapend
