@@ -95,20 +95,22 @@ Note:
 <br>
 <br>
 <br>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" >&nbsp;</span></p>)
+<br>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.5em;" ><br><br>&nbsp;</span></p>)
 @snapend
 
 @snap[north-west span-100 ]
 <br>
 <br>
-<p style="line-height:70%" align="left"><span style="font-size:0.780em;  " >
- Terminal prompt (Cnt-Alt-T)<br>
-  <br>
- <span style="font-size:0.57em; font-family:Consolas;" >
+<p style="line-height:60%" align="left"><span style="font-size:0.780em;  " >
+ Terminal prompt (Cnt-Alt-T)</span></p>
+<p style="line-height:45%" align="left" > <span style="font-size:0.57em; font-family:Consolas;" >
 &nbsp;&nbsp; bash$ sudo apt-get install screen &nbsp;&nbsp;<br>
 &nbsp;&nbsp; bash$ cd $Home &nbsp;&nbsp;<br>
 &nbsp;&nbsp; bash$ gedit ~.screenrc &nbsp;&nbsp;
-</span><br><br>
+</span></p>
+<br><br>
+<p style="line-height:60%" align="left"><span style="font-size:0.780em;  " >
 Inside the editor, type<br> @size[.8em]("<font face="Consolas">shell /bin/bash</font>") &nbsp;&nbsp;then save
 </span></p>
 <br>
@@ -119,7 +121,7 @@ Inside the editor, type<br> @size[.8em]("<font face="Consolas">shell /bin/bash</
 <br>
 <br>
 <br>
-<p style="line-height:60%" align="left"><span style="font-size:0.60em;  " >
+<p style="line-height:50%" align="left"><span style="font-size:0.60em;  " >
  <font color="#87E2A9"> While in screen<br>
  <b>Cnt-A</b> then <b>D</b> goes back to Terminal
  <br></font><br>
