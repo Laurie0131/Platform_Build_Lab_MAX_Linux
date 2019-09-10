@@ -514,17 +514,15 @@ Note:
 -  Platform Source Directory Structure
    -  Build from /Vlv2TbltDevicePkg  directory
 
----
 
-Blank slide
 ---
 @title[Steps to Build & Install Firmware]
 <p align="right"><span class="gold" >@size[1.1em](<b> Steps to Build & Install Firmware </b>)</span><span style="font-size:0.75em;" >  </span></p>
 <br>
 <ul style="list-style-type:none; line-height:0.95;">
-  <li><span style="font-size:0.8em">@size[1.0125em](<font color="yellow"> &#10102;</font>)&nbsp; At VS prompt CD to <font face="Consolas">C:/FW/MaxWS</font>  </span></li>
-  <li><span style="font-size:0.8em">@size[1.0125em](<font color="yellow"> &#10103;</font>)&nbsp; Set up local build environment </span></li>
-  <li><span style="font-size:0.8em">@size[1.0125em](<font color="yellow"> &#10104;</font>)&nbsp; Invoke <font face="Consolas">"Edksetup Rebuild" (build BaseTools)</font> </span></li>
+  <li><span style="font-size:0.8em">@size[1.0125em](<font color="yellow"> &#10102;</font>)&nbsp; Open Terminal prompt &  Cd <font face="Consolas">~/src/MaxWS</font>  </span></li>
+  <li><span style="font-size:0.8em">@size[1.0125em](<font color="yellow"> &#10103;</font>)&nbsp; Set up local build environment, <font face="Consolas">edksetup.sh</font> </span></li>
+  <li><span style="font-size:0.8em">@size[1.0125em](<font color="yellow"> &#10104;</font>)&nbsp; Build <font face="Consolas">"BaseTools" </font> </span></li>
   <li><span style="font-size:0.8em">@size[1.0125em](<font color="yellow"> &#10105;</font>)&nbsp; Invoke the build process (DEBUG & RELEASE) </span></li>
   <li><span style="font-size:0.8em">@size[1.0125em](<font color="yellow"> &#10106;</font>)&nbsp; Locate build output (.cap files for BIOS image)</span></li>
   <li><span style="font-size:0.8em">@size[1.0125em](<font color="yellow"> &#10107;</font>)&nbsp; Flash capsule image onto the platform</span></li>
@@ -539,16 +537,7 @@ Blank slide
 Note:
 
 Slide says it all
- 
----?image=/assets/images/slides/Slide20.JPG
-@title[Open a VS Command Prompt]
-<p align="right"><span class="gold" >@size[1.1em](<b>Open a VS Command Prompt</b>)</span></p>
-<p style="line-height:80%" align="left"><span style="font-size:0.8em">Follow Steps from <a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Emulator_Lab/master#/2">here</a> to Pin the Visual Studio Command Prompt to the Windows Task Bar <br>
-<br>@size[1.125em](<font color="yellow"> &#10102;</font>)&nbsp;&nbsp;Open a Visual Studio Command Prompt & <br><br>
-<span style="background-color: #000000">@size[.7em](<font face="Consolas">&nbsp;&gt; cd C:/FW/MaxWS &nbsp;&nbsp;&nbsp;</font>) <span></span></p>
 
-
-Note:
 
 
 ---
@@ -558,45 +547,40 @@ Note:
 @snap[north-west span-100 ]
 <br>
 <br>
-<p style="line-height:45%" align="left" ><span style="font-size:0.40em; font-family:Consolas;" >&nbsp;&nbsp;<br><br></span></p>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:40% "><span style="font-size:0.9em;" ><br><br><br><br><br><br><br><br><br>&nbsp;</span></p>)
 <br>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:40% "><span style="font-size:0.9em;" ><br><br>&nbsp;</span></p>)
-
+<br>
+<p style="line-height:45%" align="left" ><span style="font-size:0.40em; font-family:Consolas;" >&nbsp;&nbsp;<br><br></span></p>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:40% "><span style="font-size:0.9em;" ><br><br><br><br><br><br><br><br><br><br><br><br><br>&nbsp;</span></p>)
 @snapend
 
 
 @snap[north-west span-100 ]
 <p style="line-height:80%" align="left"><span style="font-size:0.8em">
-<br>@size[1.125em](<font color="yellow"> &#10103;</font>)<br><br>
-&nbsp;&nbsp;Run Setenv.bat or type the following: (assumes Python3.7.2) 
+<br>@size[1.125em](<font color="yellow"> &#10102;</font>)&nbsp;&nbsp;Terminal prompt (Cnt-Alt-T)  & CD to work space directory <br>
+<br>@size[1.125em](<font color="yellow"> &#10103;</font>)&nbsp;&nbsp;Set up Local environment
 </span></p>
 <p style="line-height:40%" align="left" ><span style="font-size:0.40em; font-family:Consolas;" >&nbsp;&nbsp;
-$&gt; Set WORKSPACE=%CD%&nbsp;<br>&nbsp;&nbsp;
-$&gt; set PACKAGES_PATH=%WORKSPACE%\edk2;%WORKSPACE%\edk2-platforms\Silicon\Intel;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%WORKSPACE%\edk2-platforms\Platform\Intel;%WORKSPACE%\edk2-non-osi\Silicon\Intel<br>&nbsp;&nbsp;
-<br>&nbsp;&nbsp;
-$&gt; set EDK_TOOLS_PATH=%WORKSPACE%\edk2\BaseTools<br>&nbsp;&nbsp;
-$&gt; path=%path%;%WORKSPACE%\openssl;%USERPROFILE%\AppData\Local\Programs\Python\Python37-32<br>&nbsp;&nbsp;
-$&gt; set NASM_PREFIX=%WORKSPACE%\nasm\
-<br><br>
+bash$ cd ~src/MaxWS<br>&nbsp;&nbsp;
+<br>
+bash$ export WORKSPACE=$PWD<br>&nbsp;&nbsp;
+bash$ export PACKAGES_PATH=$WORKSPACE/edk2:\<br>&nbsp;&nbsp;
+    $WORKSPACE/edk2-platforms/Silicon/Intel:\<br>&nbsp;&nbsp;
+    $WORKSPACE/edk2-platforms/Platform/Intel:\<br>&nbsp;&nbsp;
+    $WORKSPACE/edk2-non-osi/Silicon/Intel<br>&nbsp;&nbsp;
+<br>
+bash$ cd edk2/<br>&nbsp;&nbsp;
+bash$ chmod +x edksetup.sh<br>&nbsp;&nbsp;
+<br>
+bash$ . edksetup.sh
+
 </span></p> 
-<p style="line-height:80%" align="left"><span style="font-size:0.8em">
-&nbsp;&nbsp;Check if Python okay
-</span></p>
-<p style="line-height:30%" align="left" ><span style="font-size:0.40em; font-family:Consolas;" >&nbsp;&nbsp;
-$&gt; python --version<br>&nbsp;&nbsp;
-Python 3.7.2
-</span></p>
 
-@snapend
-
-@snap[south span-100 ]
-<p style="line-height:30%" align="left" ><span style="font-size:0.55em;" >
-&nbsp;Note: Download Nasm compiler and Openssl described in each Readme.txt files
-</span></p>
 @snapend
 
 Note:
+
+---
+blank slide
 
 ---?image=/assets/images/slides/Slide22.JPG
 @title[Invoke Edksetup]
