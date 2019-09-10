@@ -91,7 +91,7 @@ Note:
 <p align="right"><span class="gold" >@size[1.1em](<b>Install "Screen" on Ubuntu&nbsp;&nbsp;&nbsp;&nbsp;  </b>)</span>
 <span style="font-size:0.55em;" ><br> - skip for Clear Linux* Project &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </span></p>
 
-@snap[north-west span-49 ]
+@snap[north-west span-51 ]
 <br>
 <br>
 <br>
