@@ -393,77 +393,69 @@ bash$ sudo swupd bundle-add devpkg-gcab
 
 Note:
 
-
----
-nothing page
-
 ---?image=/assets/images/slides/Slide16.JPG
-@title[Preparing to Build]
-<p align="right"><span class="gold" >@size[1.1em](<b>Preparing to Build  </b>)</span>
-<span style="font-size:0.75em;" >  </span></p>
-
-<p style="line-height:70%"><span style="font-size:0.8em">
-Directory <font face="Consolas">C:\PlatformBuildLab2_FW\FW\PlatformBuildLab</font> from Download or zip
-</span></p>
-
-@snap[north-west span-60 ]
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p style="line-height:70%"><span style="font-size:0.8em">
-@size[1.10em](<font color="#87E2A9"> &#10102;</font>) &nbsp; Copy <font face="Consolas">\asl</font> Folder to <font face="Consolas">C:\</font><br><br><br>
-</span></p>
-
-@snapend
-
-@snap[south span-100 ]
-<p style="line-height:60%" align="left" ><span style="font-size:0.57em;" >
-&nbsp; Note: Download  Asl compiler as described in the Readme.txt
-</span></p>
-@snapend
-
-Note:
-<pre>
-Copy \asl Folder to C:\
-</pre>
-
----?image=/assets/images/slides/Slide17.JPG
-@title[Get the Minnowboard Max Source]
+@title[Copy MinnowBoard Max Source]
 <p align="right"><span class="gold" >@size[1.1em](<b>Copy Minnowboard Max Source  </b>)</span>
 <span style="font-size:0.75em;" >  </span></p>
 
 
-@snap[north-west span-20 ]
+@snap[north-west span-100 ]
 <br>
-<br>
-<p style="line-height:40%"><span style="font-size:0.8em"><br>@size[1.1em](<font color="#87E2A9"> &#10103;</font>)</span></p>
-@snapend
-
-@snap[north-east span-93 ]
-<br>
-<br>
-<p style="line-height:70%" align="left"><span style="font-size:0.8em">
-Open a VS Command Prompt<br>
-Create a working space source directory under the home directory<br></span>
-<font face="Consolas"><span style="background-color: #000000; font-size:0.50em; "> 
-C:\&gt; mkdir FW</span></font></span><br><br>
-<span style="font-size:0.7em">
-From the <font face="Consolas">FW/PlatformBuildLab</font> folder, copy and paste folder "<font face="Consolas">..FW/MaxWS" to "C:/FW/MaxWS"</font>
+<p style="line-height:70%"><span style="font-size:0.8em"><br>
+Open a terminal prompt(Alt-Cnt-T)<br>
+Create a working  space source directory under the home directory<br>
+</span>
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.60em;"> 
+&nbsp;&nbsp; bash$ mkdir ~src &nbsp;&nbsp;&nbsp;&nbsp;
+</span></font><br>
+<span style="font-size:0.65em">
+From the <font face="Consolas">FW/PlatformBuildLab</font> folder, copy and paste folder <font face="Consolas">"~/../FW/MaxWS" to ~src</font>
 </span></p>
 
 @snapend
 
 
 Note:
-- Open a VS prompt  
+- Open a terminal prompt  (Alt-Cnt-T)
 - Create a working  space source directory under the home directory
-   - bash$ mkdir FW
-- From the FW/PlatformBuildLab folder, copy and paste folder “FW/Max” to ~src
+   - bash$ mkdir ~src
+- From the FW/PlatformBuildLab folder, copy and paste folder “~FW/Max” to ~src
  
 
+---?image=/assets/images/slides/Slide17.JPG
+@title[Get the BaseTools]
+<p align="right"><span class="gold" >@size[1.1em](<b>Get the BaseTools for Max   </b>)</span><br>
+
+@snap[north-west span-100 ]
+<br>
+<br>
+<p style="line-height:70%"><span style="font-size:0.8em">
+Rename or <b>mv</b> the directory @size[.8em]("<font face="Consolas">~src/MaxWS/edk2/BaseTools</font>")
+</span></p>
+
+<p style="line-height:45%" align="left" ><span style="font-size:0.57em; font-family:Consolas;" >
+&nbsp;&nbsp; bash$ cd ~src/Max/edk2 &nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp; bash$ mv BaseTools BaseToolsX &nbsp;&nbsp;<br>
+&nbsp;&nbsp; bash$ tar -xf BaseToolsMax.tar.xz &nbsp;&nbsp;<br>
+</span></p>
+<br>
+<p style="line-height:70%"><span style="font-size:0.8em">
+Extract the file <font face="Consolas">@size[.8em](~/.../FW/PlatformBuildLab/BaseToolsMax.tar.xz)  to  @size[.8em](`~src/Max/edk2`)</font>
+</span></p>
+
+@snapend
+
+Note:
+
+-  Extract the Rename or mv the directory “~src/MaxWS/edk2/BaseTools”
+```
+ bash$ cd ~src/MaxWS/edk2<Br>
+ bash$ mv BaseTools BaseToolsxx
+```
+
+- Extract the file ~FW/PlatformBuildLab/BaseToolsMax.tar.gz  to  ~src/Max/edk2
+  - bash$ tar -xf BaseToolsMax.tar.xz 
+  
 
 
 ---
@@ -485,8 +477,8 @@ Note:
  	   Silicon/Intel/<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           Vlv2DeviceRefCodePkg/<br>&nbsp;&nbsp;
 	edk2-non-osi/<br>&nbsp;&nbsp;
-	nasm/ &ast;&ast;<br>&nbsp;&nbsp;
-	openssl/ &ast;&ast;<br>&nbsp;&nbsp;
+	<br>&nbsp;&nbsp;
+	<br>&nbsp;&nbsp;
 <br><br><br>&nbsp;
 </span></p>
 
@@ -511,18 +503,15 @@ Note:
 @snapend
 
 
-@snap[south span-100 ]
-<p style="line-height:30%" align="left" ><span style="font-size:0.55em;" >
-&ast;&ast;Nasm compiler and &ast;&ast;Openssl may need to be downloaded per the Readme.txt file in each<br>&nbsp;&nbsp; directory
-</span></p>
-<br>
-@snapend
+
 
 Note:
 -  Platform Source Directory Structure
    -  Build from /Vlv2TbltDevicePkg  directory
 
+---
 
+Blank slide
 ---
 @title[Steps to Build & Install Firmware]
 <p align="right"><span class="gold" >@size[1.1em](<b> Steps to Build & Install Firmware </b>)</span><span style="font-size:0.75em;" >  </span></p>
